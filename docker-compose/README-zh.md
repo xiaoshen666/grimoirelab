@@ -120,7 +120,7 @@ docker-compose -f docker-compose-opensearch.yml up -d
 
 # 更多信息
 
-- [`projects.json` 文件格式](https://github.com/chaoss/grimoirelab-sirmordred#projectsjson-)
+- [`projects.json` 文件格式](https://github.com/xiaoshen666/grimoirelab-sirmordred/blob/main/readme-zh.md)
 - [`setup.cfg` 文件格式](https://github.com/chaoss/grimoirelab-sirmordred#setupcfg-)
 - 获取不同服务的 API 令牌：
   - [GitHub](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
