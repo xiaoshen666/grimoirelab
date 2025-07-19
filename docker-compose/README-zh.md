@@ -58,8 +58,8 @@ $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
 git clone https://github.com/chaoss/grimoirelab
 ```
 
-1. 默认情况下，本仓库包含 [`default-grimoirelab-settings`](https://yuanbao.tencent.com/chat/default-grimoirelab-settings) 中的一些配置文件。这些文件是分析本仓库 Git 活动的最小配置集。如果要分析不同项目或使用不同的代码库和数据源，需要修改 [`projects.json`](https://yuanbao.tencent.com/chat/default-grimoirelab-settings/projects.json) 和 [`setup.cfg`](https://yuanbao.tencent.com/chat/default-grimoirelab-settings/setup.cfg) 文件。关于这些文件格式的更多信息，请参见下文。
-2. 进入 [`docker-compose`](https://yuanbao.tencent.com/chat/naQivTmsDa/) 文件夹并运行以下命令部署 GrimoireLab：
+1. 默认情况下，本仓库包含 [`default-grimoirelab-settings`] 中的一些配置文件。这些文件是分析本仓库 Git 活动的最小配置集。如果要分析不同项目或使用不同的代码库和数据源，需要修改 [`projects.json`] 和 [`setup.cfg`]文件。关于这些文件格式的更多信息，请参见下文。
+2. 进入 [`docker-compose`] 文件夹并运行以下命令部署 GrimoireLab：
 
 ```
 cd grimoirelab/docker-compose
@@ -81,7 +81,7 @@ docker-compose up -d
 
 如果需要部署具有基本安全保护的基础设施，请使用*安全*环境：
 
-- 编辑 [`default-grimoirelab-settings/setup-secured.cfg`](https://yuanbao.tencent.com/chat/default-grimoirelab-settings/setup-secured.cfg) 以满足您的需求
+- 编辑 [`default-grimoirelab-settings/setup-secured.cfg`] 以满足您的需求
 - 使用 `docker-compose-secured.yml` 文件代替常规的 `docker-compose.yml`：
 
 ```
@@ -121,10 +121,10 @@ docker-compose -f docker-compose-opensearch.yml up -d
 # 更多信息
 
 - [`projects.json` 文件格式](https://github.com/xiaoshen666/grimoirelab-sirmordred/blob/main/readme-zh.md)
-- [`setup.cfg` 文件格式](https://github.com/chaoss/grimoirelab-sirmordred#setupcfg-)
+- [`setup.cfg` 文件格式](https://github.com/xiaoshen666/grimoirelab-sirmordred/blob/main/readme-zh.md)
 - 获取不同服务的 API 令牌：
   - [GitHub](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
-  - [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)
+  - [GitLab](https://github.com/xiaoshen666/grimoirelab/blob/main/docker-compose/gitlab-readme-zh.md)
   - [Slack](https://get.slack.help/hc/en-us/articles/215770388-Create-and-regenerate-API-tokens)
 
 ## 常见问题
